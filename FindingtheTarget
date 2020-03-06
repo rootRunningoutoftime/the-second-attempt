@@ -1,0 +1,32 @@
+I want to
+take a user input
+check if its smaller than 1e3, 1e6 or 1e9
+square the user input
+display the difference of the square to the next larger number from the above list
+repeat the above two steps until the result is larger than the target
+I was told that "There is a lot of code shared between the three cases.However you cannot use a switch for something like this.
+A switch needs to have specific values for its cases", 
+So just from there it reminds me of what i was thinking about 
+ why 4. "Your switch case makes no sense."
+i dont know how to prompt the users, with a question framed to reflect the possible options in a switch case
+besides just using a switch case to have the program be more visible to the coder", he still continued to advice me 
+"to do something of the form if ( input < 1000 )."
+I believe that, when i was told to "First find out your target"  is to not have to handle the three scenarios manually/explicitly.
+The first piece of code will determine the target variable, the 2nd will use it
+        #include <iostream>
+        #include <string.h>    
+        #include<assert.h>
+        using namespace std;
+        int main()
+       {
+       int target = 0; //this will be either 1e3, 1e6 or 1e9
+       int input = 0; //this will contain the users input
+       cin >> input;
+       for ( target = 1000; target <=1e9; target*=1000; ) //use a loop to find the target value, so we dont have to repeat outselfs.
+       {
+        if ( input <= target ) //if input is less than the target, we will break the loop. So if input is less than 1000, target will have that value.
+        { break; }
+        }
+ but this code doesnt do enough, i still havent forfilled the requirements on which the code statement said 
+ to have "an INT to keep track of which square you are at, an INT to keep the number of grains on the current square and 
+ an INT to keep track of the grains on all previous squares." Unless i rewrite the code a little bit to forfilling the program 
