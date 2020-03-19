@@ -1,0 +1,30 @@
+ Because I thought that “the While loops generally go around an unknown number of times (until a condition is met), 
+ while a for loop usually has a known amount of times to loop around.” 
+ I avoided the for loop thinking that I didn’t know how many times the user would keep using the loop 
+ “to keep track of which square the user was at, an int to keep the number of grains on the current square 
+ and an int to keep track of the grains on all previous squares.”, 
+ this information would be displayed in the code block.
+ I previously asked my self, even then what made beweathr and ultimately this guy write the code in such a way, 
+ what within the given made the redditer intrepret the given and 
+ deliever the code this way
+ I can see how it would be easier to do be able to keep track of which the squares the user was at,
+ an int to keep the number of grains on the current square, and an int to keep track of the grains on all 
+ previous squares."If they were displayed in a colomns and rows, we can see all the previous squares if the for- loop is allowed to 
+ continue to a certain limit, starting at one, while incrementing by one. This means we met the conditions of the for-loop
+ "have a know amount of times to loop around". So with a code block to find the target and display the results the other code block within 
+ the if- else statement can just display to the user a cout statement for the input not meeting the condtitions of the loop. 
+ 
+                        #include <iostream> 
+                        #include <string.h>     
+                        #include<assert.h> 
+                        using namespace std; 
+                        int main() 
+                       { 
+                       int target = 0; //this will be either 1e3, 1e6 or 1e9 
+                       int input = 0; //this will contain the users input 
+                       cin >> input; 
+                       for ( target = 1000; target <=1e9; target*=1000; ) //use a loop to find the target value, so we dont have to repeat outselfs. 
+                       { 
+                        if ( input <= target ) //if input is less than the target, we will break the loop. So if input is less than 1000, target will have that value. 
+                        { break; } 
+                        } 
