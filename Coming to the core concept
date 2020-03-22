@@ -1,0 +1,24 @@
+okay, from my comment suggesting towards the end of the paragrah,as quoted, "......at the end So we must rewrite the code to display all 
+the requirements of the user from the programs and making it clearly visible, which with intuition some may use columns and rows. 
+The prompt claims that, quote , “We suggest that you write out the value of all your variables for each iteration of the 
+loop so that you can see what’s going on”.  So besides what I written earlier in the program" 
+we would rewrite the second attempts assumed program 
+           from 
+                  int The input = 0;
+                  cout << " this program will calculate how many squares are required to give the inventor at least 1000 grains of rice, at least 1,000,000 grains, and at least 1,000,000,000 grains.You'll be able to keep track of which square you are at, an int to keep the number of grains on the current square and an int to keep track of the grains on all previous squares. As soon as you put in an input " <<endl;
+                  cin >> TheInput;
+                  switch (TheInput) {
+                  case'':
+                       while (TheInput <= 1000){
+                       }
+            to 
+                  int TheInput = 0; 
+                  cout << " this program will calculate how many squares are required to give the inventor at least 1000 grains of rice, at least 1,000,000 grains, and at least 1,000,000,000 grains.You'll be able to keep track of which square you are at, an int to keep the number of grains on the current square and an int to keep track of the grains on all previous squares. As soon as you put in an input " <<endl;
+                       while (TheInput <= 1000) {
+                  }
+  By doing this i am taking out the code statements that i dont need to forfill my programs purpose, remember the while loop in each code block wasnt needed and 
+  and the switch case wasnt any helpful either due to the cases letter condition for each one and the whole point wasnt to manually or explicitly find the target
+  one by one but first we will remove the switch case and the switch case because all the other code blocks are the same with slightly different conditions, so
+  we ultimately need one and to have a cin >>input; code statement after the user is prompt to place a value, it would be best to keep some sorta of function containng 
+  a condition to compare values to, for the sake of not having an neccessary errors in my error list. 
+  
