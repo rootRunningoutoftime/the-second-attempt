@@ -1,0 +1,47 @@
+Okay surveying through my errors list I see one error called C1075 ‘{‘ : no matching token found. I had to ask my self, what does that error mean; to understand how to fix it?, so I read up on the error, it states and I quote ,” 
+The compiler expected matching token before it reached the end of file. This error can be caused by an unmatched bracket, brace, or other paired character.”  I found that there is square bracket missing for the code block for the while- loop. 
+So my hypothesis is to go back and just add the ‘}’ after or before the other square bracket ‘}’. I don’t really believe it matters where you put it as long as it connects with the other brackets. So my hypothesis constructed goes as followed
+"If I add the square bracket either before or after the other square brackets , then There error will go away and ill be able to compile the program."  
+Surveying what the book asked from me again one thing stands out to me is this “The inventor asked for on grain of rice for the first square, 2 for the second square, 4 for the third and so on, doubling for each of the 64 squares.” 
+In experiment 5, while drafting my hypothesis I also quoted the statement from the book, “We suggest that you write out the value of all your variables for each iteration of the loop so that you can see what’s going on”.  
+Seeing as I don’t understand the math in my code, I have to go back to p.e.m.d.a.s just to be sure in what order is the operands deal with the operant then if and only if, the order is as I thought I can ask myself the question, 
+does my code have values assigned variables, by name, relevant ,in context, to each iteration of the loop and if not how do I make it more concise? So my hypothesis constructed goes as following,  
+
+From this  
+
+                       While( TheInput <= 1000) { 
+                       cout << TheInput << ‘\t’ << 1000 / (TheInput * TheInput) << endl; 
+                       cout << “ the remainder is : “ << 1000 % (TheInput * TheInput) << endl;  
+                       ++TheInput;
+                       } 
+
+To this  
+
+                        While( TheInput <= 1000) { 
+                        cout << “the input” << ‘\t’ << “the remainder” << endl; 
+                        cout << “ 1000 / (TheInput * TheInput) “ << ‘\t’ << 1000 % (TheInput * TheInput) << endl;  
+                        ++TheInput; 
+                        } 
+
+So out of the three ways I could construct my hypothesis I choose to try to the information more visible by putting it in columns and rows. 
+I believe by rewriting the code as such I would have a clearer visual to the information displayed on the console. 
+                      
+                         #include <iostream>
+                         #include <iostream>
+                         #include <string.h>    
+                         #include<assert.h>
+                          using namespace std;
+                          int main()
+                          {
+
+                              int TheInput = 0;
+                              cout << "This program will calculate how many squares are required to give the inventor at least 1000 grains of rice, at least 1,000,000 grains, and at least 1,000,000,000 grains.You'll be able to keep track of which square you are at, an int to keep the number of grains on the current square and an int to keep track of the grains on all previous squares. As soon as you put in an input " << endl;
+                              cin >> TheInput;
+                              while (TheInput <= 1000) {
+                                cout << "The Input" << '\t ' <<  "the remainder" << endl;
+                                cout << 1000 / (TheInput * TheInput) << '\t' << 1000 % (TheInput * TheInput) << endl;
+                                ++TheInput;
+                              }
+
+                          }
+
